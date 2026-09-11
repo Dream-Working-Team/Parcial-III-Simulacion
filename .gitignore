@@ -1,0 +1,22 @@
+# Entornos virtuales y dependencias
+.env
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Salidas de reportes generados dinámicamente
+reports/output/*.txt
+reports/output/*.json
+!reports/output/.gitkeep
+
+# IDE y sistema operativo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
