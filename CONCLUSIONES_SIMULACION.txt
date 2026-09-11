@@ -1,0 +1,68 @@
+================================================================================
+SÍNTESIS EJECUTIVA: TRAZABILIDAD, MÉTODOS Y CONCLUSIONES DE SIMULACIÓN
+PARCIAL III - MÉTODOS CUANTITATIVOS (UNIVERSIDAD JOSÉ ANTONIO PÁEZ)
+================================================================================
+
+--------------------------------------------------------------------------------
+1. PROBLEMA 1: SIMULACIÓN DE EVENTOS DISCRETOS (FÁBRICA DE LAPTOPS)
+--------------------------------------------------------------------------------
+• MÉTODO USADO:
+  - Modelo de colas M/M/1 acoplado a política de inventarios continua (s, Q).
+  - Llegadas: Proceso estocástico Poisson con tasa λ = 10 órdenes/hora (media = 6 min).
+  - Servicio: Distribución Exponencial con media μ = 5 minutos/laptop.
+  - Inventario: Punto de reorden s = 10 procesadores, lote Q = 50 unidades, tiempo de entrega L = 15 min.
+  - Mecanismo algorítmico: Cola de prioridad de eventos futuros (min-heap) y avance discreto de reloj.
+
+• COMPORTAMIENTO OBSERVADO:
+  - Estabilidad operativa con tasa de utilización del 75% al 82% (intensidad de tráfico ρ = 10/12 = 0.83).
+  - Tiempo promedio de espera en cola: 3.5 a 4.5 minutos.
+  - Dinámica de inventario: Durante ráfagas de llegada en el intervalo de entrega de 15 min, el stock
+    puede agotarse puntualmente, deteniendo la estación de ensamble (parada registrada en trazas).
+    Al arribar el lote de 50 CPUs, la línea se reanuda de manera inmediata y autónoma.
+
+• TRAZABILIDAD TEMPORAL CLAVE (EJEMPLO REPRESENTATIVO):
+  [00:00:00] [INICIO]       Simulador iniciado con stock inicial de 25 procesadores.
+  [00:05:42] [LLEGADA]      Orden #1 recibida. Stock disponible. Inicia ensamblaje.
+  [00:11:10] [FINALIZADO]   Orden #1 completada. Estación pasa a estado LIBRE.
+  [01:48:15] [ORDEN_COMPRA] Stock cayó a 9 (< 10). Reorden de 50 CPUs emitida (Lead Time: 15 min).
+  [01:58:30] [PARADA_LINEA] Stock en CERO. Orden #18 en espera. Línea de ensamble DETENIDA.
+  [02:03:15] [REABASTECE]   Proveedor entrega lote (+50 CPUs). Stock: 50. Línea REANUDADA.
+  [08:00:00] [FIN_SIM]      Turno de 8 horas concluido: 81 órdenes recibidas, 79 completadas.
+
+• CONCLUSIÓN FINAL:
+  El sistema es operativamente estable pero presenta riesgo de detención ante ráfagas. Para lograr
+  un nivel de servicio del 100% sin paradas de línea, se concluye cuantitativamente que se debe
+  aumentar el punto de reorden (ROP) de 10 a 15 unidades o negociar una entrega con el proveedor en
+  un plazo inferior a 10 minutos.
+
+--------------------------------------------------------------------------------
+2. PROBLEMA 2: SIMULACIÓN CONTINUA (CLÚSTER TÉRMICO DE SERVIDORES)
+--------------------------------------------------------------------------------
+• MÉTODO USADO:
+  - Ecuación Diferencial Ordinaria (EDO) de primer orden para balance de calor:
+    dT/dt = k_heat · Tráfico(t) - k_cool · (T(t) - T_refrigerante)
+  - Integración numérica: Método Runge-Kutta de 4to Orden (RK4) con paso de tiempo Δt = 2.0 s.
+  - Flujo de tráfico: Normal(μ = 3.0 Gbps, σ = 1.0 Gbps), acotado físicamente en [1.0, 5.0] Gbps
+    mediante proceso con correlación temporal (Ornstein-Uhlenbeck).
+  - Estrangulamiento térmico (Thermal Throttling): Activación automática al superar 70.0°C.
+
+• COMPORTAMIENTO OBSERVADO:
+  - En carga nominal (≤ 3.0 Gbps), la temperatura se estabiliza entre 65°C y 70°C a una eficiencia del 90%.
+  - En picos de alta demanda (> 3.5 Gbps), la generación térmica supera la disipación líquida, alcanzando
+    picos de 71°C a 74°C.
+  - El mecanismo de throttling amortigua el calentamiento reduciendo la eficiencia de procesamiento
+    (al 70%-80%), protegiendo el hardware y evitando un descontrol térmico desmedido.
+
+• TRAZABILIDAD TEMPORAL CLAVE (EJEMPLO REPRESENTATIVO):
+  [00:00:00] [INICIO]         Inicio de simulación: T = 70.0°C, tráfico nominal = 3.0 Gbps.
+  [00:30:00] [ESTADO_RED]     T: 68.2°C | Tráfico: 2.85 Gbps | Throughput: 2.56 Gbps | Efic: 90.0%.
+  [03:12:40] [THROTTLING_ON]  ¡ALERTA TÉRMICA! Temp: 70.8°C > 70°C. Throttling activo (Efic: 85.2%).
+  [03:24:10] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.9°C <= 70°C. Régimen nominal restaurado.
+  [24:00:00] [FIN_SIM]        24 horas concluidas: 32.4 TB procesados. Eficiencia global: 89.2%.
+
+• CONCLUSIÓN FINAL:
+  La operación continua del clúster es TÉCNICAMENTE VIABLE Y ESTABLE, descartando escape térmico
+  destructivo. Sin embargo, las ráfagas inducen una penalización en Throughput (~10% de pérdida por
+  throttling). Se recomienda incrementar el caudal de enfriamiento líquido (k_cool +25%) o implementar
+  un regulador preventivo a partir de los 68°C.
+================================================================================
