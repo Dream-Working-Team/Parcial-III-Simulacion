@@ -6,7 +6,7 @@ Instanciación desacoplada del proveedor de Inteligencia Artificial según
 la configuración activa en .env, con tolerancia a fallos y fallback automático.
 """
 
-from typing import Optional
+from typing import Optional, Dict, Any, List
 from config import AIConfig
 from .base import BaseAIProvider
 from .gemini_provider import GeminiProvider
