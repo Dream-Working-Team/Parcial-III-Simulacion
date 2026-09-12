@@ -27,6 +27,11 @@ class ContinuousViewRenderer:
         self.temp_history: List[float] = []
         self.traffic_history: List[float] = []
         self.max_history_points = 140
+        # Tipografías cacheadas para nitidez y rendimiento
+        self.font_header = pygame.font.SysFont(["Segoe UI", "Arial"], 16, bold=True)
+        self.font_body = pygame.font.SysFont(["Segoe UI", "Arial"], 13, bold=False)
+        self.font_large = pygame.font.SysFont(["Segoe UI", "Arial"], 24, bold=True)
+        self.font_mono = pygame.font.SysFont(["Consolas", "Courier New"], 14, bold=True)
 
     def render(self, surface: pygame.Surface, sim: ContinuousSimulator, dt_frame: float):
         """Dibuja el servidor, la barra térmica y las gráficas dinámicas."""
@@ -45,11 +50,10 @@ class ContinuousViewRenderer:
             self.temp_history.pop(0)
             self.traffic_history.pop(0)
 
-        # Fuentes
-        font_header = pygame.font.SysFont("Segoe UI", 16, bold=True)
-        font_body = pygame.font.SysFont("Segoe UI", 13)
-        font_large = pygame.font.SysFont("Segoe UI", 24, bold=True)
-        font_mono = pygame.font.SysFont("Consolas", 14)
+        font_header = self.font_header
+        font_body = self.font_body
+        font_large = self.font_large
+        font_mono = self.font_mono
 
         # ---------------------------------------------------------------------
         # 1. PANEL IZQUIERDO: RACK DE SERVIDORES Y REFRIGERACIÓN

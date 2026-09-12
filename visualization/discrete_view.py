@@ -23,17 +23,23 @@ class DiscreteViewRenderer:
 
     def __init__(self):
         self.pulse_timer: float = 0.0
+        # Tipografías cacheadas para máxima nitidez y rendimiento
+        self.font_header = pygame.font.SysFont(["Segoe UI", "Arial"], 16, bold=True)
+        self.font_body = pygame.font.SysFont(["Segoe UI", "Arial"], 13, bold=False)
+        self.font_body_bold = pygame.font.SysFont(["Segoe UI", "Arial"], 13, bold=True)
+        self.font_large = pygame.font.SysFont(["Segoe UI", "Arial"], 22, bold=True)
+        self.font_mono = pygame.font.SysFont(["Consolas", "Courier New"], 14, bold=True)
 
     def render(self, surface: pygame.Surface, sim: DiscreteEventSimulator, dt_frame: float):
         """Dibuja todos los componentes de la fábrica según el estado del simulador."""
         self.pulse_timer += dt_frame * 5.0
         w, h = surface.get_size()
 
-        # Fuentes
-        font_header = pygame.font.SysFont("Segoe UI", 16, bold=True)
-        font_body = pygame.font.SysFont("Segoe UI", 13)
-        font_large = pygame.font.SysFont("Segoe UI", 22, bold=True)
-        font_mono = pygame.font.SysFont("Consolas", 14)
+        font_header = self.font_header
+        font_body = self.font_body
+        font_body_bold = self.font_body_bold
+        font_large = self.font_large
+        font_mono = self.font_mono
 
         # ---------------------------------------------------------------------
         # 1. PANEL IZQUIERDO: COLA DE ÓRDENES EN ESPERA (CINTA TRANSPORTADORA)
