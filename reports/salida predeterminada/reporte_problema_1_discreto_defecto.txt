@@ -1,0 +1,51 @@
+================================================================================
+REPORTE OFICIAL DE SIMULACIÓN - CASO POR DEFECTO
+PROBLEMA 1: SIMULACIÓN DE EVENTOS DISCRETOS (FÁBRICA DE LAPTOPS)
+================================================================================
+
+1. PARÁMETROS DEL SISTEMA (POR DEFECTO):
+  - Duración: 8.0 horas
+  - Tasa Poisson: 10.0 órdenes/hora
+  - Tiempo de ensamble Exp: 5.0 minutos/laptop
+  - Stock inicial: 25 procesadores
+  - Umbral crítico reorden: < 10 procesadores
+  - Lote proveedor: 50 procesadores
+  - Lead Time: 15.0 minutos
+
+2. MÉTRICAS CUANTITATIVAS OBTENIDAS:
+  - duracion_simulacion_horas: 8.0
+  - duracion_simulacion_minutos: 480.0
+  - total_ordenes_recibidas: 102
+  - total_ordenes_completadas: 86
+  - ordenes_en_cola_final: 15
+  - tiempo_espera_promedio_min: 66.32
+  - tiempo_espera_maximo_min: 116.8
+  - tiempo_sistema_promedio_min: 71.68
+  - tiempo_despacho_lote_promedio_min: 310.85
+  - paradas_linea_por_falta_stock: 0
+  - tiempo_total_linea_detenida_min: 0.0
+  - porcentaje_tiempo_linea_detenida: 0.0
+  - utilizacion_estacion_ensamblaje_pct: 97.3
+  - ordenes_retrasadas_por_stock: 0
+  - porcentaje_ordenes_retrasadas: 0.0
+  - eficiencia_reabastecimiento_pct: 100.0
+  - total_reordenes_emitidas: 2
+  - total_lotes_recibidos: 2
+  - stock_final_procesadores: 38
+
+3. ANÁLISIS, CONCLUSIÓN Y RECOMENDACIONES DE LA IA (GEMINI):
+--------------------------------------------------------------------------------
+1. DIAGNÓSTICO DEL SISTEMA:
+El sistema presenta un cuello de botella severo en la estación de ensamblaje, con una utilización crítica del 97.3%. La tasa de llegada (Poisson, $\lambda = 10$ ord/h) supera la capacidad de procesamiento efectiva, generando acumulación: 15 órdenes en cola al final del turno y un tiempo de espera promedio elevado de 66.32 min (llegando a un máximo de 116.8 min). No obstante, el sistema de inventarios logró 0 paradas de línea y 0 órdenes retrasadas por falta de stock.
+
+2. EFICIENCIA DE REABASTECIMIENTO:
+La política de inventarios actual (umbral de reorden < 10, tamaño de lote de 50 unidades y tiempo de entrega de 15 min) es robusta y eficiente al 100%. Con 2 reórdenes emitidas y un stock final de 38 procesadores, la política previene con éxito el desabastecimiento, manteniendo la línea operativa sin sacrificar capital de trabajo excesivo.
+
+3. CONCLUSIÓN:
+El rendimiento operativo está limitado por la capacidad de procesamiento de la estación de ensamblaje (capacidad insuficiente frente a la demanda estocástica), más que por la gestión de la cadena de suministro o el inventario de procesadores.
+
+4. RECOMENDACIONES TÉCNICAS:
+1. **Balanceo de Línea:** Agregar una segunda estación de ensamblaje o reducir el tiempo medio de servicio de 5 minutos para disminuir la utilización al rango óptimo del 75-80% y abatir la cola.
+2. **Optimización de Lote y Umbral:** Mantener la política de reabastecimiento (umbral 10, lote 50), ya que su eficiencia fue del 100%, garantizando cero quiebres de stock ante el *Lead Time* de 15 min.
+3. **Gestión de Cola:** Implementar disciplina de prioridades (FIFO) o control de admisión para mitigar el impacto psicológico y operativo del tiempo máximo de espera en sistema (116.8 min).
+--------------------------------------------------------------------------------

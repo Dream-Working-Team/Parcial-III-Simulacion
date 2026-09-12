@@ -1,0 +1,106 @@
+================================================================================
+TRAZAS COMPLETAS - PROBLEMA 2: CLÚSTER TÉRMICO (CASO POR DEFECTO 24 HORAS)
+================================================================================
+
+[00:00:00] [INICIO      ] Simulación Continua iniciada. Duración: 24.0h, T_inicial: 70.0°C, dt=2.0s.
+[00:00:00] [ESTADO_RED  ] Temp: 69.99°C | Tráfico: 2.99 Gbps | Proc: 2.69 Gbps | Eficiencia: 90.0%
+[00:00:10] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.02°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[00:04:24] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.97°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[00:09:58] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.07°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[00:13:26] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.96°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[00:30:00] [ESTADO_RED  ] Temp: 68.02°C | Tráfico: 2.98 Gbps | Proc: 2.68 Gbps | Eficiencia: 90.0%
+[00:38:08] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[00:42:24] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.88°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[01:00:00] [ESTADO_RED  ] Temp: 66.12°C | Tráfico: 4.02 Gbps | Proc: 3.62 Gbps | Eficiencia: 90.0%
+[01:04:36] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.10°C > 70°C. Throttling activo. Eficiencia cae a 89.7%.
+[01:06:54] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.89°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[01:12:58] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.04°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[01:17:18] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.95°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[01:30:00] [ESTADO_RED  ] Temp: 59.42°C | Tráfico: 2.32 Gbps | Proc: 2.09 Gbps | Eficiencia: 90.0%
+[02:00:00] [ESTADO_RED  ] Temp: 65.10°C | Tráfico: 4.04 Gbps | Proc: 3.63 Gbps | Eficiencia: 90.0%
+[02:30:00] [ESTADO_RED  ] Temp: 65.32°C | Tráfico: 2.40 Gbps | Proc: 2.16 Gbps | Eficiencia: 90.0%
+[03:00:00] [ESTADO_RED  ] Temp: 63.00°C | Tráfico: 3.96 Gbps | Proc: 3.57 Gbps | Eficiencia: 90.0%
+[03:30:00] [ESTADO_RED  ] Temp: 62.29°C | Tráfico: 1.93 Gbps | Proc: 1.74 Gbps | Eficiencia: 90.0%
+[04:00:00] [ESTADO_RED  ] Temp: 63.43°C | Tráfico: 1.68 Gbps | Proc: 1.51 Gbps | Eficiencia: 90.0%
+[04:30:00] [ESTADO_RED  ] Temp: 67.84°C | Tráfico: 1.01 Gbps | Proc: 0.91 Gbps | Eficiencia: 90.0%
+[05:00:00] [ESTADO_RED  ] Temp: 60.04°C | Tráfico: 2.79 Gbps | Proc: 2.51 Gbps | Eficiencia: 90.0%
+[05:30:00] [ESTADO_RED  ] Temp: 63.80°C | Tráfico: 3.86 Gbps | Proc: 3.48 Gbps | Eficiencia: 90.0%
+[06:00:00] [ESTADO_RED  ] Temp: 63.78°C | Tráfico: 2.56 Gbps | Proc: 2.31 Gbps | Eficiencia: 90.0%
+[06:30:00] [ESTADO_RED  ] Temp: 65.61°C | Tráfico: 3.99 Gbps | Proc: 3.60 Gbps | Eficiencia: 90.0%
+[06:38:36] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[06:39:44] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.94°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[06:41:56] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.04°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[06:46:32] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.95°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[06:52:52] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.01°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[06:55:06] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.96°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[07:00:00] [ESTADO_RED  ] Temp: 65.57°C | Tráfico: 1.79 Gbps | Proc: 1.61 Gbps | Eficiencia: 90.0%
+[07:30:00] [ESTADO_RED  ] Temp: 62.62°C | Tráfico: 2.97 Gbps | Proc: 2.67 Gbps | Eficiencia: 90.0%
+[08:00:00] [ESTADO_RED  ] Temp: 66.07°C | Tráfico: 3.31 Gbps | Proc: 2.98 Gbps | Eficiencia: 90.0%
+[08:30:00] [ESTADO_RED  ] Temp: 60.79°C | Tráfico: 1.14 Gbps | Proc: 1.03 Gbps | Eficiencia: 90.0%
+[09:00:00] [ESTADO_RED  ] Temp: 67.16°C | Tráfico: 3.05 Gbps | Proc: 2.75 Gbps | Eficiencia: 90.0%
+[09:30:00] [ESTADO_RED  ] Temp: 67.27°C | Tráfico: 4.04 Gbps | Proc: 3.64 Gbps | Eficiencia: 90.0%
+[10:00:00] [ESTADO_RED  ] Temp: 69.57°C | Tráfico: 4.40 Gbps | Proc: 3.96 Gbps | Eficiencia: 90.0%
+[10:00:20] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.10°C > 70°C. Throttling activo. Eficiencia cae a 89.7%.
+[10:04:18] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.93°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[10:30:00] [ESTADO_RED  ] Temp: 66.33°C | Tráfico: 3.15 Gbps | Proc: 2.84 Gbps | Eficiencia: 90.0%
+[10:44:40] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.07°C > 70°C. Throttling activo. Eficiencia cae a 89.8%.
+[10:45:36] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.96°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[11:00:00] [ESTADO_RED  ] Temp: 65.86°C | Tráfico: 3.92 Gbps | Proc: 3.52 Gbps | Eficiencia: 90.0%
+[11:30:00] [ESTADO_RED  ] Temp: 58.26°C | Tráfico: 3.41 Gbps | Proc: 3.07 Gbps | Eficiencia: 90.0%
+[12:00:00] [ESTADO_RED  ] Temp: 65.08°C | Tráfico: 3.83 Gbps | Proc: 3.44 Gbps | Eficiencia: 90.0%
+[12:30:00] [ESTADO_RED  ] Temp: 67.89°C | Tráfico: 4.08 Gbps | Proc: 3.67 Gbps | Eficiencia: 90.0%
+[12:54:48] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.02°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[12:56:32] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.94°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[12:57:14] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.08°C > 70°C. Throttling activo. Eficiencia cae a 89.8%.
+[12:58:04] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.92°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[12:58:56] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.04°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[13:00:00] [ESTADO_RED  ] Temp: 70.08°C | Tráfico: 3.43 Gbps | Proc: 3.07 Gbps | Eficiencia: 89.6%
+[13:00:16] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 70.00°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[13:30:00] [ESTADO_RED  ] Temp: 64.86°C | Tráfico: 4.24 Gbps | Proc: 3.82 Gbps | Eficiencia: 90.0%
+[14:00:00] [ESTADO_RED  ] Temp: 66.57°C | Tráfico: 4.06 Gbps | Proc: 3.65 Gbps | Eficiencia: 90.0%
+[14:30:00] [ESTADO_RED  ] Temp: 67.39°C | Tráfico: 4.03 Gbps | Proc: 3.63 Gbps | Eficiencia: 90.0%
+[15:00:00] [ESTADO_RED  ] Temp: 66.99°C | Tráfico: 3.98 Gbps | Proc: 3.58 Gbps | Eficiencia: 90.0%
+[15:30:00] [ESTADO_RED  ] Temp: 60.52°C | Tráfico: 2.45 Gbps | Proc: 2.21 Gbps | Eficiencia: 90.0%
+[16:00:00] [ESTADO_RED  ] Temp: 65.97°C | Tráfico: 4.89 Gbps | Proc: 4.40 Gbps | Eficiencia: 90.0%
+[16:30:00] [ESTADO_RED  ] Temp: 68.47°C | Tráfico: 3.91 Gbps | Proc: 3.52 Gbps | Eficiencia: 90.0%
+[17:00:00] [ESTADO_RED  ] Temp: 66.26°C | Tráfico: 4.11 Gbps | Proc: 3.70 Gbps | Eficiencia: 90.0%
+[17:30:00] [ESTADO_RED  ] Temp: 67.46°C | Tráfico: 1.88 Gbps | Proc: 1.69 Gbps | Eficiencia: 90.0%
+[17:34:38] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[17:35:36] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.96°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[17:42:50] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[17:52:34] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.92°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[18:00:00] [ESTADO_RED  ] Temp: 67.15°C | Tráfico: 2.87 Gbps | Proc: 2.59 Gbps | Eficiencia: 90.0%
+[18:11:00] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.09°C > 70°C. Throttling activo. Eficiencia cae a 89.8%.
+[18:14:36] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.96°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[18:30:00] [ESTADO_RED  ] Temp: 62.48°C | Tráfico: 2.46 Gbps | Proc: 2.21 Gbps | Eficiencia: 90.0%
+[19:00:00] [ESTADO_RED  ] Temp: 65.17°C | Tráfico: 4.03 Gbps | Proc: 3.62 Gbps | Eficiencia: 90.0%
+[19:05:30] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[19:11:16] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.92°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[19:30:00] [ESTADO_RED  ] Temp: 68.82°C | Tráfico: 4.25 Gbps | Proc: 3.83 Gbps | Eficiencia: 90.0%
+[19:30:48] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.10°C > 70°C. Throttling activo. Eficiencia cae a 89.7%.
+[19:35:24] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.86°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[20:00:00] [ESTADO_RED  ] Temp: 68.12°C | Tráfico: 3.30 Gbps | Proc: 2.97 Gbps | Eficiencia: 90.0%
+[20:21:08] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.03°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[20:22:50] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.95°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[20:23:48] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.02°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[20:24:52] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.92°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[20:30:00] [ESTADO_RED  ] Temp: 69.61°C | Tráfico: 2.94 Gbps | Proc: 2.65 Gbps | Eficiencia: 90.0%
+[20:32:02] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.04°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[20:33:08] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.95°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[20:35:58] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[20:41:14] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.93°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[20:56:14] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.06°C > 70°C. Throttling activo. Eficiencia cae a 89.8%.
+[20:59:30] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.93°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[20:59:52] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.04°C > 70°C. Throttling activo. Eficiencia cae a 90.0%.
+[21:00:00] [ESTADO_RED  ] Temp: 70.22°C | Tráfico: 4.70 Gbps | Proc: 4.18 Gbps | Eficiencia: 89.0%
+[21:01:54] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.94°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[21:30:00] [ESTADO_RED  ] Temp: 61.92°C | Tráfico: 2.00 Gbps | Proc: 1.80 Gbps | Eficiencia: 90.0%
+[21:41:32] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[21:43:22] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.96°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[21:44:28] [THROTTLING_ON] ¡ALERTA TÉRMICA! Temp: 70.05°C > 70°C. Throttling activo. Eficiencia cae a 89.9%.
+[21:46:50] [THROTTLING_OFF] RECUPERACIÓN TÉRMICA. Temp: 69.91°C <= 70°C. Sistema vuelve a régimen nominal (90%).
+[22:00:00] [ESTADO_RED  ] Temp: 65.10°C | Tráfico: 2.79 Gbps | Proc: 2.51 Gbps | Eficiencia: 90.0%
+[22:30:00] [ESTADO_RED  ] Temp: 62.55°C | Tráfico: 2.93 Gbps | Proc: 2.64 Gbps | Eficiencia: 90.0%
+[23:00:00] [ESTADO_RED  ] Temp: 63.05°C | Tráfico: 2.53 Gbps | Proc: 2.27 Gbps | Eficiencia: 90.0%
+[23:30:00] [ESTADO_RED  ] Temp: 65.05°C | Tráfico: 1.90 Gbps | Proc: 1.71 Gbps | Eficiencia: 90.0%
+[00:00:00] [FIN_SIM     ] Simulación Continua finalizada a las 24.00 horas.

@@ -1,0 +1,386 @@
+================================================================================
+TRAZAS COMPLETAS - PROBLEMA 1: FÁBRICA DE LAPTOPS (CASO POR DEFECTO 8 HORAS)
+================================================================================
+
+[00:00:00] [INICIO      ] Simulador iniciado. Primera orden programada en 12.26 min.
+[00:12:15] [LLEGADA     ] Orden #1 recibida. Servicio estimado: 2.39 min. Stock actual: 25
+[00:12:15] [SERVICIO    ] Orden #1 inicia ensamble. Procesador asignado. Stock restante: 24
+[00:14:38] [FINALIZADO  ] Orden #1 completada. Espera: 0.00 min, Total: 2.39 min.
+[00:14:38] [ESTACION    ] Estación queda LIBRE en espera de nuevas órdenes.
+[00:15:21] [LLEGADA     ] Orden #2 recibida. Servicio estimado: 7.67 min. Stock actual: 24
+[00:15:21] [SERVICIO    ] Orden #2 inicia ensamble. Procesador asignado. Stock restante: 23
+[00:21:29] [LLEGADA     ] Orden #3 recibida. Servicio estimado: 17.02 min. Stock actual: 23
+[00:21:29] [EN_COLA     ] Orden #3 entra a cola de espera. Longitud de cola: 1
+[00:22:00] [LLEGADA     ] Orden #4 recibida. Servicio estimado: 0.44 min. Stock actual: 23
+[00:22:00] [EN_COLA     ] Orden #4 entra a cola de espera. Longitud de cola: 2
+[00:23:01] [FINALIZADO  ] Orden #2 completada. Espera: 0.00 min, Total: 7.67 min.
+[00:23:01] [SERVICIO    ] Orden #3 inicia ensamble. Procesador asignado. Stock restante: 22
+[00:25:37] [LLEGADA     ] Orden #5 recibida. Servicio estimado: 1.98 min. Stock actual: 22
+[00:25:37] [EN_COLA     ] Orden #5 entra a cola de espera. Longitud de cola: 2
+[00:27:47] [LLEGADA     ] Orden #6 recibida. Servicio estimado: 6.94 min. Stock actual: 22
+[00:27:47] [EN_COLA     ] Orden #6 entra a cola de espera. Longitud de cola: 3
+[00:30:19] [LLEGADA     ] Orden #7 recibida. Servicio estimado: 6.40 min. Stock actual: 22
+[00:30:19] [EN_COLA     ] Orden #7 entra a cola de espera. Longitud de cola: 4
+[00:35:14] [LLEGADA     ] Orden #8 recibida. Servicio estimado: 6.07 min. Stock actual: 22
+[00:35:14] [EN_COLA     ] Orden #8 entra a cola de espera. Longitud de cola: 5
+[00:36:52] [LLEGADA     ] Orden #9 recibida. Servicio estimado: 5.05 min. Stock actual: 22
+[00:36:52] [EN_COLA     ] Orden #9 entra a cola de espera. Longitud de cola: 6
+[00:40:02] [FINALIZADO  ] Orden #3 completada. Espera: 1.53 min, Total: 18.55 min.
+[00:40:02] [SERVICIO    ] Orden #4 inicia ensamble. Procesador asignado. Stock restante: 21
+[00:40:29] [FINALIZADO  ] Orden #4 completada. Espera: 18.03 min, Total: 18.48 min.
+[00:40:29] [SERVICIO    ] Orden #5 inicia ensamble. Procesador asignado. Stock restante: 20
+[00:40:57] [LLEGADA     ] Orden #10 recibida. Servicio estimado: 1.75 min. Stock actual: 20
+[00:40:57] [EN_COLA     ] Orden #10 entra a cola de espera. Longitud de cola: 5
+[00:42:28] [FINALIZADO  ] Orden #5 completada. Espera: 14.87 min, Total: 16.85 min.
+[00:42:28] [SERVICIO    ] Orden #6 inicia ensamble. Procesador asignado. Stock restante: 19
+[00:44:22] [LLEGADA     ] Orden #11 recibida. Servicio estimado: 3.51 min. Stock actual: 19
+[00:44:22] [EN_COLA     ] Orden #11 entra a cola de espera. Longitud de cola: 5
+[00:45:14] [LLEGADA     ] Orden #12 recibida. Servicio estimado: 1.92 min. Stock actual: 19
+[00:45:14] [EN_COLA     ] Orden #12 entra a cola de espera. Longitud de cola: 6
+[00:49:25] [FINALIZADO  ] Orden #6 completada. Espera: 14.68 min, Total: 21.62 min.
+[00:49:25] [SERVICIO    ] Orden #7 inicia ensamble. Procesador asignado. Stock restante: 18
+[00:53:44] [LLEGADA     ] Orden #13 recibida. Servicio estimado: 16.71 min. Stock actual: 18
+[00:53:44] [EN_COLA     ] Orden #13 entra a cola de espera. Longitud de cola: 6
+[00:54:57] [LLEGADA     ] Orden #14 recibida. Servicio estimado: 2.60 min. Stock actual: 18
+[00:54:57] [EN_COLA     ] Orden #14 entra a cola de espera. Longitud de cola: 7
+[00:55:49] [FINALIZADO  ] Orden #7 completada. Espera: 19.09 min, Total: 25.50 min.
+[00:55:49] [SERVICIO    ] Orden #8 inicia ensamble. Procesador asignado. Stock restante: 17
+[00:56:05] [LLEGADA     ] Orden #15 recibida. Servicio estimado: 6.93 min. Stock actual: 17
+[00:56:05] [EN_COLA     ] Orden #15 entra a cola de espera. Longitud de cola: 7
+[01:01:53] [FINALIZADO  ] Orden #8 completada. Espera: 20.58 min, Total: 26.65 min.
+[01:01:53] [SERVICIO    ] Orden #9 inicia ensamble. Procesador asignado. Stock restante: 16
+[01:02:04] [LLEGADA     ] Orden #16 recibida. Servicio estimado: 6.08 min. Stock actual: 16
+[01:02:04] [EN_COLA     ] Orden #16 entra a cola de espera. Longitud de cola: 7
+[01:06:24] [LLEGADA     ] Orden #17 recibida. Servicio estimado: 2.85 min. Stock actual: 16
+[01:06:24] [EN_COLA     ] Orden #17 entra a cola de espera. Longitud de cola: 8
+[01:06:45] [LLEGADA     ] Orden #18 recibida. Servicio estimado: 2.04 min. Stock actual: 16
+[01:06:45] [EN_COLA     ] Orden #18 entra a cola de espera. Longitud de cola: 9
+[01:06:56] [FINALIZADO  ] Orden #9 completada. Espera: 25.02 min, Total: 30.08 min.
+[01:06:56] [SERVICIO    ] Orden #10 inicia ensamble. Procesador asignado. Stock restante: 15
+[01:08:41] [FINALIZADO  ] Orden #10 completada. Espera: 25.99 min, Total: 27.74 min.
+[01:08:41] [SERVICIO    ] Orden #11 inicia ensamble. Procesador asignado. Stock restante: 14
+[01:08:47] [LLEGADA     ] Orden #19 recibida. Servicio estimado: 1.81 min. Stock actual: 14
+[01:08:47] [EN_COLA     ] Orden #19 entra a cola de espera. Longitud de cola: 8
+[01:12:12] [FINALIZADO  ] Orden #11 completada. Espera: 24.33 min, Total: 27.84 min.
+[01:12:12] [SERVICIO    ] Orden #12 inicia ensamble. Procesador asignado. Stock restante: 13
+[01:14:07] [FINALIZADO  ] Orden #12 completada. Espera: 26.96 min, Total: 28.88 min.
+[01:14:07] [SERVICIO    ] Orden #13 inicia ensamble. Procesador asignado. Stock restante: 12
+[01:19:17] [LLEGADA     ] Orden #20 recibida. Servicio estimado: 6.27 min. Stock actual: 12
+[01:19:17] [EN_COLA     ] Orden #20 entra a cola de espera. Longitud de cola: 7
+[01:19:39] [LLEGADA     ] Orden #21 recibida. Servicio estimado: 1.78 min. Stock actual: 12
+[01:19:39] [EN_COLA     ] Orden #21 entra a cola de espera. Longitud de cola: 8
+[01:22:22] [LLEGADA     ] Orden #22 recibida. Servicio estimado: 1.97 min. Stock actual: 12
+[01:22:22] [EN_COLA     ] Orden #22 entra a cola de espera. Longitud de cola: 9
+[01:23:49] [LLEGADA     ] Orden #23 recibida. Servicio estimado: 1.14 min. Stock actual: 12
+[01:23:49] [EN_COLA     ] Orden #23 entra a cola de espera. Longitud de cola: 10
+[01:26:02] [LLEGADA     ] Orden #24 recibida. Servicio estimado: 2.05 min. Stock actual: 12
+[01:26:02] [EN_COLA     ] Orden #24 entra a cola de espera. Longitud de cola: 11
+[01:30:50] [FINALIZADO  ] Orden #13 completada. Espera: 20.38 min, Total: 37.09 min.
+[01:30:50] [SERVICIO    ] Orden #14 inicia ensamble. Procesador asignado. Stock restante: 11
+[01:33:25] [FINALIZADO  ] Orden #14 completada. Espera: 35.87 min, Total: 38.47 min.
+[01:33:25] [SERVICIO    ] Orden #15 inicia ensamble. Procesador asignado. Stock restante: 10
+[01:37:51] [LLEGADA     ] Orden #25 recibida. Servicio estimado: 16.35 min. Stock actual: 10
+[01:37:51] [EN_COLA     ] Orden #25 entra a cola de espera. Longitud de cola: 10
+[01:39:53] [LLEGADA     ] Orden #26 recibida. Servicio estimado: 37.34 min. Stock actual: 10
+[01:39:53] [EN_COLA     ] Orden #26 entra a cola de espera. Longitud de cola: 11
+[01:40:21] [FINALIZADO  ] Orden #15 completada. Espera: 37.34 min, Total: 44.27 min.
+[01:40:21] [SERVICIO    ] Orden #16 inicia ensamble. Procesador asignado. Stock restante: 9
+[01:40:21] [ORDEN_COMPRA] Stock (9) cayó bajo el umbral (10). Pedido de lote #1 emitido. Entrega en 15 min.
+[01:41:01] [LLEGADA     ] Orden #27 recibida. Servicio estimado: 2.97 min. Stock actual: 9
+[01:41:01] [EN_COLA     ] Orden #27 entra a cola de espera. Longitud de cola: 11
+[01:45:37] [LLEGADA     ] Orden #28 recibida. Servicio estimado: 7.06 min. Stock actual: 9
+[01:45:37] [EN_COLA     ] Orden #28 entra a cola de espera. Longitud de cola: 12
+[01:46:26] [FINALIZADO  ] Orden #16 completada. Espera: 38.29 min, Total: 44.37 min.
+[01:46:26] [SERVICIO    ] Orden #17 inicia ensamble. Procesador asignado. Stock restante: 8
+[01:49:17] [FINALIZADO  ] Orden #17 completada. Espera: 40.04 min, Total: 42.89 min.
+[01:49:17] [SERVICIO    ] Orden #18 inicia ensamble. Procesador asignado. Stock restante: 7
+[01:49:55] [LLEGADA     ] Orden #29 recibida. Servicio estimado: 1.34 min. Stock actual: 7
+[01:49:55] [EN_COLA     ] Orden #29 entra a cola de espera. Longitud de cola: 11
+[01:51:19] [FINALIZADO  ] Orden #18 completada. Espera: 42.53 min, Total: 44.57 min.
+[01:51:19] [SERVICIO    ] Orden #19 inicia ensamble. Procesador asignado. Stock restante: 6
+[01:53:08] [FINALIZADO  ] Orden #19 completada. Espera: 42.53 min, Total: 44.34 min.
+[01:53:08] [SERVICIO    ] Orden #20 inicia ensamble. Procesador asignado. Stock restante: 5
+[01:54:57] [LLEGADA     ] Orden #30 recibida. Servicio estimado: 3.42 min. Stock actual: 5
+[01:54:57] [EN_COLA     ] Orden #30 entra a cola de espera. Longitud de cola: 10
+[01:55:21] [REABASTECE  ] Lote #1 (+50 CPUs) entregado por proveedor. Stock actualizado: 55 unidades.
+[01:57:01] [LLEGADA     ] Orden #31 recibida. Servicio estimado: 5.98 min. Stock actual: 55
+[01:57:01] [EN_COLA     ] Orden #31 entra a cola de espera. Longitud de cola: 11
+[01:59:24] [FINALIZADO  ] Orden #20 completada. Espera: 33.85 min, Total: 40.11 min.
+[01:59:24] [SERVICIO    ] Orden #21 inicia ensamble. Procesador asignado. Stock restante: 54
+[02:01:11] [FINALIZADO  ] Orden #21 completada. Espera: 39.74 min, Total: 41.52 min.
+[02:01:11] [SERVICIO    ] Orden #22 inicia ensamble. Procesador asignado. Stock restante: 53
+[02:01:45] [LLEGADA     ] Orden #32 recibida. Servicio estimado: 0.41 min. Stock actual: 53
+[02:01:45] [EN_COLA     ] Orden #32 entra a cola de espera. Longitud de cola: 10
+[02:02:04] [LLEGADA     ] Orden #33 recibida. Servicio estimado: 7.71 min. Stock actual: 53
+[02:02:04] [EN_COLA     ] Orden #33 entra a cola de espera. Longitud de cola: 11
+[02:03:09] [FINALIZADO  ] Orden #22 completada. Espera: 38.82 min, Total: 40.79 min.
+[02:03:09] [SERVICIO    ] Orden #23 inicia ensamble. Procesador asignado. Stock restante: 52
+[02:04:17] [FINALIZADO  ] Orden #23 completada. Espera: 39.33 min, Total: 40.47 min.
+[02:04:17] [SERVICIO    ] Orden #24 inicia ensamble. Procesador asignado. Stock restante: 51
+[02:06:20] [FINALIZADO  ] Orden #24 completada. Espera: 38.25 min, Total: 40.30 min.
+[02:06:20] [SERVICIO    ] Orden #25 inicia ensamble. Procesador asignado. Stock restante: 50
+[02:06:48] [LLEGADA     ] Orden #34 recibida. Servicio estimado: 7.63 min. Stock actual: 50
+[02:06:48] [EN_COLA     ] Orden #34 entra a cola de espera. Longitud de cola: 9
+[02:07:57] [LLEGADA     ] Orden #35 recibida. Servicio estimado: 2.51 min. Stock actual: 50
+[02:07:57] [EN_COLA     ] Orden #35 entra a cola de espera. Longitud de cola: 10
+[02:09:42] [LLEGADA     ] Orden #36 recibida. Servicio estimado: 4.06 min. Stock actual: 50
+[02:09:42] [EN_COLA     ] Orden #36 entra a cola de espera. Longitud de cola: 11
+[02:14:55] [LLEGADA     ] Orden #37 recibida. Servicio estimado: 0.43 min. Stock actual: 50
+[02:14:55] [EN_COLA     ] Orden #37 entra a cola de espera. Longitud de cola: 12
+[02:16:38] [LLEGADA     ] Orden #38 recibida. Servicio estimado: 0.92 min. Stock actual: 50
+[02:16:38] [EN_COLA     ] Orden #38 entra a cola de espera. Longitud de cola: 13
+[02:21:37] [LLEGADA     ] Orden #39 recibida. Servicio estimado: 6.19 min. Stock actual: 50
+[02:21:37] [EN_COLA     ] Orden #39 entra a cola de espera. Longitud de cola: 14
+[02:22:42] [FINALIZADO  ] Orden #25 completada. Espera: 28.49 min, Total: 44.85 min.
+[02:22:42] [SERVICIO    ] Orden #26 inicia ensamble. Procesador asignado. Stock restante: 49
+[02:25:09] [LLEGADA     ] Orden #40 recibida. Servicio estimado: 3.81 min. Stock actual: 49
+[02:25:09] [EN_COLA     ] Orden #40 entra a cola de espera. Longitud de cola: 14
+[02:35:52] [LLEGADA     ] Orden #41 recibida. Servicio estimado: 2.06 min. Stock actual: 49
+[02:35:52] [EN_COLA     ] Orden #41 entra a cola de espera. Longitud de cola: 15
+[02:54:43] [LLEGADA     ] Orden #42 recibida. Servicio estimado: 3.21 min. Stock actual: 49
+[02:54:43] [EN_COLA     ] Orden #42 entra a cola de espera. Longitud de cola: 16
+[02:56:51] [LLEGADA     ] Orden #43 recibida. Servicio estimado: 10.57 min. Stock actual: 49
+[02:56:51] [EN_COLA     ] Orden #43 entra a cola de espera. Longitud de cola: 17
+[03:00:02] [FINALIZADO  ] Orden #26 completada. Espera: 42.81 min, Total: 80.15 min.
+[03:00:02] [SERVICIO    ] Orden #27 inicia ensamble. Procesador asignado. Stock restante: 48
+[03:01:49] [LLEGADA     ] Orden #44 recibida. Servicio estimado: 11.63 min. Stock actual: 48
+[03:01:49] [EN_COLA     ] Orden #44 entra a cola de espera. Longitud de cola: 17
+[03:03:00] [FINALIZADO  ] Orden #27 completada. Espera: 79.02 min, Total: 81.98 min.
+[03:03:00] [SERVICIO    ] Orden #28 inicia ensamble. Procesador asignado. Stock restante: 47
+[03:04:50] [LLEGADA     ] Orden #45 recibida. Servicio estimado: 7.46 min. Stock actual: 47
+[03:04:50] [EN_COLA     ] Orden #45 entra a cola de espera. Longitud de cola: 17
+[03:07:26] [LLEGADA     ] Orden #46 recibida. Servicio estimado: 20.30 min. Stock actual: 47
+[03:07:26] [EN_COLA     ] Orden #46 entra a cola de espera. Longitud de cola: 18
+[03:10:03] [FINALIZADO  ] Orden #28 completada. Espera: 77.38 min, Total: 84.44 min.
+[03:10:03] [SERVICIO    ] Orden #29 inicia ensamble. Procesador asignado. Stock restante: 46
+[03:11:24] [FINALIZADO  ] Orden #29 completada. Espera: 80.14 min, Total: 81.49 min.
+[03:11:24] [SERVICIO    ] Orden #30 inicia ensamble. Procesador asignado. Stock restante: 45
+[03:14:49] [FINALIZADO  ] Orden #30 completada. Espera: 76.45 min, Total: 79.87 min.
+[03:14:49] [SERVICIO    ] Orden #31 inicia ensamble. Procesador asignado. Stock restante: 44
+[03:20:48] [FINALIZADO  ] Orden #31 completada. Espera: 77.80 min, Total: 83.78 min.
+[03:20:48] [SERVICIO    ] Orden #32 inicia ensamble. Procesador asignado. Stock restante: 43
+[03:21:12] [FINALIZADO  ] Orden #32 completada. Espera: 79.04 min, Total: 79.45 min.
+[03:21:12] [SERVICIO    ] Orden #33 inicia ensamble. Procesador asignado. Stock restante: 42
+[03:21:59] [LLEGADA     ] Orden #47 recibida. Servicio estimado: 9.27 min. Stock actual: 42
+[03:21:59] [EN_COLA     ] Orden #47 entra a cola de espera. Longitud de cola: 14
+[03:22:45] [LLEGADA     ] Orden #48 recibida. Servicio estimado: 7.00 min. Stock actual: 42
+[03:22:45] [EN_COLA     ] Orden #48 entra a cola de espera. Longitud de cola: 15
+[03:23:38] [LLEGADA     ] Orden #49 recibida. Servicio estimado: 0.66 min. Stock actual: 42
+[03:23:38] [EN_COLA     ] Orden #49 entra a cola de espera. Longitud de cola: 16
+[03:25:46] [LLEGADA     ] Orden #50 recibida. Servicio estimado: 16.45 min. Stock actual: 42
+[03:25:46] [EN_COLA     ] Orden #50 entra a cola de espera. Longitud de cola: 17
+[03:28:55] [FINALIZADO  ] Orden #33 completada. Espera: 79.14 min, Total: 86.85 min.
+[03:28:55] [SERVICIO    ] Orden #34 inicia ensamble. Procesador asignado. Stock restante: 41
+[03:36:33] [FINALIZADO  ] Orden #34 completada. Espera: 82.12 min, Total: 89.75 min.
+[03:36:33] [SERVICIO    ] Orden #35 inicia ensamble. Procesador asignado. Stock restante: 40
+[03:39:03] [FINALIZADO  ] Orden #35 completada. Espera: 88.60 min, Total: 91.11 min.
+[03:39:03] [SERVICIO    ] Orden #36 inicia ensamble. Procesador asignado. Stock restante: 39
+[03:43:07] [FINALIZADO  ] Orden #36 completada. Espera: 89.36 min, Total: 93.42 min.
+[03:43:07] [SERVICIO    ] Orden #37 inicia ensamble. Procesador asignado. Stock restante: 38
+[03:43:33] [FINALIZADO  ] Orden #37 completada. Espera: 88.20 min, Total: 88.63 min.
+[03:43:33] [SERVICIO    ] Orden #38 inicia ensamble. Procesador asignado. Stock restante: 37
+[03:44:28] [FINALIZADO  ] Orden #38 completada. Espera: 86.92 min, Total: 87.84 min.
+[03:44:28] [SERVICIO    ] Orden #39 inicia ensamble. Procesador asignado. Stock restante: 36
+[03:45:51] [LLEGADA     ] Orden #51 recibida. Servicio estimado: 1.80 min. Stock actual: 36
+[03:45:51] [EN_COLA     ] Orden #51 entra a cola de espera. Longitud de cola: 12
+[03:48:30] [LLEGADA     ] Orden #52 recibida. Servicio estimado: 6.69 min. Stock actual: 36
+[03:48:30] [EN_COLA     ] Orden #52 entra a cola de espera. Longitud de cola: 13
+[03:50:40] [FINALIZADO  ] Orden #39 completada. Espera: 82.86 min, Total: 89.06 min.
+[03:50:40] [SERVICIO    ] Orden #40 inicia ensamble. Procesador asignado. Stock restante: 35
+[03:53:26] [LLEGADA     ] Orden #53 recibida. Servicio estimado: 0.35 min. Stock actual: 35
+[03:53:26] [EN_COLA     ] Orden #53 entra a cola de espera. Longitud de cola: 13
+[03:54:29] [FINALIZADO  ] Orden #40 completada. Espera: 85.52 min, Total: 89.33 min.
+[03:54:29] [SERVICIO    ] Orden #41 inicia ensamble. Procesador asignado. Stock restante: 34
+[03:56:32] [FINALIZADO  ] Orden #41 completada. Espera: 78.61 min, Total: 80.67 min.
+[03:56:32] [SERVICIO    ] Orden #42 inicia ensamble. Procesador asignado. Stock restante: 33
+[03:59:25] [LLEGADA     ] Orden #54 recibida. Servicio estimado: 0.72 min. Stock actual: 33
+[03:59:25] [EN_COLA     ] Orden #54 entra a cola de espera. Longitud de cola: 12
+[03:59:45] [FINALIZADO  ] Orden #42 completada. Espera: 61.82 min, Total: 65.03 min.
+[03:59:45] [SERVICIO    ] Orden #43 inicia ensamble. Procesador asignado. Stock restante: 32
+[04:06:55] [LLEGADA     ] Orden #55 recibida. Servicio estimado: 2.83 min. Stock actual: 32
+[04:06:55] [EN_COLA     ] Orden #55 entra a cola de espera. Longitud de cola: 12
+[04:10:19] [FINALIZADO  ] Orden #43 completada. Espera: 62.90 min, Total: 73.47 min.
+[04:10:19] [SERVICIO    ] Orden #44 inicia ensamble. Procesador asignado. Stock restante: 31
+[04:13:07] [LLEGADA     ] Orden #56 recibida. Servicio estimado: 6.58 min. Stock actual: 31
+[04:13:07] [EN_COLA     ] Orden #56 entra a cola de espera. Longitud de cola: 12
+[04:15:02] [LLEGADA     ] Orden #57 recibida. Servicio estimado: 0.80 min. Stock actual: 31
+[04:15:02] [EN_COLA     ] Orden #57 entra a cola de espera. Longitud de cola: 13
+[04:18:43] [LLEGADA     ] Orden #58 recibida. Servicio estimado: 2.74 min. Stock actual: 31
+[04:18:43] [EN_COLA     ] Orden #58 entra a cola de espera. Longitud de cola: 14
+[04:20:07] [LLEGADA     ] Orden #59 recibida. Servicio estimado: 18.42 min. Stock actual: 31
+[04:20:07] [EN_COLA     ] Orden #59 entra a cola de espera. Longitud de cola: 15
+[04:21:57] [FINALIZADO  ] Orden #44 completada. Espera: 68.49 min, Total: 80.12 min.
+[04:21:57] [SERVICIO    ] Orden #45 inicia ensamble. Procesador asignado. Stock restante: 30
+[04:22:00] [LLEGADA     ] Orden #60 recibida. Servicio estimado: 1.47 min. Stock actual: 30
+[04:22:00] [EN_COLA     ] Orden #60 entra a cola de espera. Longitud de cola: 15
+[04:25:46] [LLEGADA     ] Orden #61 recibida. Servicio estimado: 2.06 min. Stock actual: 30
+[04:25:46] [EN_COLA     ] Orden #61 entra a cola de espera. Longitud de cola: 16
+[04:26:02] [LLEGADA     ] Orden #62 recibida. Servicio estimado: 1.57 min. Stock actual: 30
+[04:26:02] [EN_COLA     ] Orden #62 entra a cola de espera. Longitud de cola: 17
+[04:28:03] [LLEGADA     ] Orden #63 recibida. Servicio estimado: 0.77 min. Stock actual: 30
+[04:28:03] [EN_COLA     ] Orden #63 entra a cola de espera. Longitud de cola: 18
+[04:29:25] [FINALIZADO  ] Orden #45 completada. Espera: 77.12 min, Total: 84.58 min.
+[04:29:25] [SERVICIO    ] Orden #46 inicia ensamble. Procesador asignado. Stock restante: 29
+[04:29:35] [LLEGADA     ] Orden #64 recibida. Servicio estimado: 7.60 min. Stock actual: 29
+[04:29:35] [EN_COLA     ] Orden #64 entra a cola de espera. Longitud de cola: 18
+[04:35:03] [LLEGADA     ] Orden #65 recibida. Servicio estimado: 8.48 min. Stock actual: 29
+[04:35:03] [EN_COLA     ] Orden #65 entra a cola de espera. Longitud de cola: 19
+[04:37:51] [LLEGADA     ] Orden #66 recibida. Servicio estimado: 10.25 min. Stock actual: 29
+[04:37:51] [EN_COLA     ] Orden #66 entra a cola de espera. Longitud de cola: 20
+[04:39:25] [LLEGADA     ] Orden #67 recibida. Servicio estimado: 0.53 min. Stock actual: 29
+[04:39:25] [EN_COLA     ] Orden #67 entra a cola de espera. Longitud de cola: 21
+[04:43:08] [LLEGADA     ] Orden #68 recibida. Servicio estimado: 1.33 min. Stock actual: 29
+[04:43:08] [EN_COLA     ] Orden #68 entra a cola de espera. Longitud de cola: 22
+[04:49:43] [FINALIZADO  ] Orden #46 completada. Espera: 81.97 min, Total: 102.27 min.
+[04:49:43] [SERVICIO    ] Orden #47 inicia ensamble. Procesador asignado. Stock restante: 28
+[04:58:59] [FINALIZADO  ] Orden #47 completada. Espera: 87.73 min, Total: 97.00 min.
+[04:58:59] [SERVICIO    ] Orden #48 inicia ensamble. Procesador asignado. Stock restante: 27
+[05:05:59] [FINALIZADO  ] Orden #48 completada. Espera: 96.24 min, Total: 103.24 min.
+[05:05:59] [SERVICIO    ] Orden #49 inicia ensamble. Procesador asignado. Stock restante: 26
+[05:06:39] [FINALIZADO  ] Orden #49 completada. Espera: 102.34 min, Total: 103.01 min.
+[05:06:39] [SERVICIO    ] Orden #50 inicia ensamble. Procesador asignado. Stock restante: 25
+[05:07:37] [LLEGADA     ] Orden #69 recibida. Servicio estimado: 3.61 min. Stock actual: 25
+[05:07:37] [EN_COLA     ] Orden #69 entra a cola de espera. Longitud de cola: 19
+[05:12:33] [LLEGADA     ] Orden #70 recibida. Servicio estimado: 6.56 min. Stock actual: 25
+[05:12:33] [EN_COLA     ] Orden #70 entra a cola de espera. Longitud de cola: 20
+[05:17:37] [LLEGADA     ] Orden #71 recibida. Servicio estimado: 0.34 min. Stock actual: 25
+[05:17:37] [EN_COLA     ] Orden #71 entra a cola de espera. Longitud de cola: 21
+[05:18:53] [LLEGADA     ] Orden #72 recibida. Servicio estimado: 1.02 min. Stock actual: 25
+[05:18:53] [EN_COLA     ] Orden #72 entra a cola de espera. Longitud de cola: 22
+[05:23:06] [FINALIZADO  ] Orden #50 completada. Espera: 100.89 min, Total: 117.34 min.
+[05:23:06] [SERVICIO    ] Orden #51 inicia ensamble. Procesador asignado. Stock restante: 24
+[05:24:53] [FINALIZADO  ] Orden #51 completada. Espera: 97.25 min, Total: 99.05 min.
+[05:24:53] [SERVICIO    ] Orden #52 inicia ensamble. Procesador asignado. Stock restante: 23
+[05:31:35] [FINALIZADO  ] Orden #52 completada. Espera: 96.40 min, Total: 103.09 min.
+[05:31:35] [SERVICIO    ] Orden #53 inicia ensamble. Procesador asignado. Stock restante: 22
+[05:31:49] [LLEGADA     ] Orden #73 recibida. Servicio estimado: 5.14 min. Stock actual: 22
+[05:31:49] [EN_COLA     ] Orden #73 entra a cola de espera. Longitud de cola: 20
+[05:31:56] [FINALIZADO  ] Orden #53 completada. Espera: 98.14 min, Total: 98.49 min.
+[05:31:56] [SERVICIO    ] Orden #54 inicia ensamble. Procesador asignado. Stock restante: 21
+[05:32:39] [FINALIZADO  ] Orden #54 completada. Espera: 92.50 min, Total: 93.23 min.
+[05:32:39] [SERVICIO    ] Orden #55 inicia ensamble. Procesador asignado. Stock restante: 20
+[05:35:29] [FINALIZADO  ] Orden #55 completada. Espera: 85.74 min, Total: 88.57 min.
+[05:35:29] [SERVICIO    ] Orden #56 inicia ensamble. Procesador asignado. Stock restante: 19
+[05:37:52] [LLEGADA     ] Orden #74 recibida. Servicio estimado: 0.28 min. Stock actual: 19
+[05:37:52] [EN_COLA     ] Orden #74 entra a cola de espera. Longitud de cola: 18
+[05:42:04] [FINALIZADO  ] Orden #56 completada. Espera: 82.37 min, Total: 88.95 min.
+[05:42:04] [SERVICIO    ] Orden #57 inicia ensamble. Procesador asignado. Stock restante: 18
+[05:42:52] [FINALIZADO  ] Orden #57 completada. Espera: 87.02 min, Total: 87.82 min.
+[05:42:52] [SERVICIO    ] Orden #58 inicia ensamble. Procesador asignado. Stock restante: 17
+[05:45:36] [FINALIZADO  ] Orden #58 completada. Espera: 84.15 min, Total: 86.89 min.
+[05:45:36] [SERVICIO    ] Orden #59 inicia ensamble. Procesador asignado. Stock restante: 16
+[05:53:20] [LLEGADA     ] Orden #75 recibida. Servicio estimado: 0.90 min. Stock actual: 16
+[05:53:20] [EN_COLA     ] Orden #75 entra a cola de espera. Longitud de cola: 16
+[05:53:38] [LLEGADA     ] Orden #76 recibida. Servicio estimado: 5.89 min. Stock actual: 16
+[05:53:38] [EN_COLA     ] Orden #76 entra a cola de espera. Longitud de cola: 17
+[06:01:34] [LLEGADA     ] Orden #77 recibida. Servicio estimado: 1.75 min. Stock actual: 16
+[06:01:34] [EN_COLA     ] Orden #77 entra a cola de espera. Longitud de cola: 18
+[06:04:02] [FINALIZADO  ] Orden #59 completada. Espera: 85.48 min, Total: 103.91 min.
+[06:04:02] [SERVICIO    ] Orden #60 inicia ensamble. Procesador asignado. Stock restante: 15
+[06:05:30] [FINALIZADO  ] Orden #60 completada. Espera: 102.02 min, Total: 103.49 min.
+[06:05:30] [SERVICIO    ] Orden #61 inicia ensamble. Procesador asignado. Stock restante: 14
+[06:06:06] [LLEGADA     ] Orden #78 recibida. Servicio estimado: 9.23 min. Stock actual: 14
+[06:06:06] [EN_COLA     ] Orden #78 entra a cola de espera. Longitud de cola: 17
+[06:07:33] [FINALIZADO  ] Orden #61 completada. Espera: 99.73 min, Total: 101.79 min.
+[06:07:33] [SERVICIO    ] Orden #62 inicia ensamble. Procesador asignado. Stock restante: 13
+[06:09:07] [FINALIZADO  ] Orden #62 completada. Espera: 101.51 min, Total: 103.08 min.
+[06:09:07] [SERVICIO    ] Orden #63 inicia ensamble. Procesador asignado. Stock restante: 12
+[06:09:53] [FINALIZADO  ] Orden #63 completada. Espera: 101.08 min, Total: 101.84 min.
+[06:09:53] [SERVICIO    ] Orden #64 inicia ensamble. Procesador asignado. Stock restante: 11
+[06:11:53] [LLEGADA     ] Orden #79 recibida. Servicio estimado: 7.07 min. Stock actual: 11
+[06:11:53] [EN_COLA     ] Orden #79 entra a cola de espera. Longitud de cola: 15
+[06:12:05] [LLEGADA     ] Orden #80 recibida. Servicio estimado: 4.97 min. Stock actual: 11
+[06:12:05] [EN_COLA     ] Orden #80 entra a cola de espera. Longitud de cola: 16
+[06:17:29] [FINALIZADO  ] Orden #64 completada. Espera: 100.31 min, Total: 107.90 min.
+[06:17:29] [SERVICIO    ] Orden #65 inicia ensamble. Procesador asignado. Stock restante: 10
+[06:19:29] [LLEGADA     ] Orden #81 recibida. Servicio estimado: 4.01 min. Stock actual: 10
+[06:19:29] [EN_COLA     ] Orden #81 entra a cola de espera. Longitud de cola: 16
+[06:25:58] [FINALIZADO  ] Orden #65 completada. Espera: 102.43 min, Total: 110.91 min.
+[06:25:58] [SERVICIO    ] Orden #66 inicia ensamble. Procesador asignado. Stock restante: 9
+[06:25:58] [ORDEN_COMPRA] Stock (9) cayó bajo el umbral (10). Pedido de lote #2 emitido. Entrega en 15 min.
+[06:28:48] [LLEGADA     ] Orden #82 recibida. Servicio estimado: 6.62 min. Stock actual: 9
+[06:28:48] [EN_COLA     ] Orden #82 entra a cola de espera. Longitud de cola: 16
+[06:29:08] [LLEGADA     ] Orden #83 recibida. Servicio estimado: 1.05 min. Stock actual: 9
+[06:29:08] [EN_COLA     ] Orden #83 entra a cola de espera. Longitud de cola: 17
+[06:30:10] [LLEGADA     ] Orden #84 recibida. Servicio estimado: 0.46 min. Stock actual: 9
+[06:30:10] [EN_COLA     ] Orden #84 entra a cola de espera. Longitud de cola: 18
+[06:32:16] [LLEGADA     ] Orden #85 recibida. Servicio estimado: 9.12 min. Stock actual: 9
+[06:32:16] [EN_COLA     ] Orden #85 entra a cola de espera. Longitud de cola: 19
+[06:36:13] [FINALIZADO  ] Orden #66 completada. Espera: 108.12 min, Total: 118.36 min.
+[06:36:13] [SERVICIO    ] Orden #67 inicia ensamble. Procesador asignado. Stock restante: 8
+[06:36:44] [FINALIZADO  ] Orden #67 completada. Espera: 116.80 min, Total: 117.32 min.
+[06:36:44] [SERVICIO    ] Orden #68 inicia ensamble. Procesador asignado. Stock restante: 7
+[06:38:04] [FINALIZADO  ] Orden #68 completada. Espera: 113.60 min, Total: 114.94 min.
+[06:38:04] [SERVICIO    ] Orden #69 inicia ensamble. Procesador asignado. Stock restante: 6
+[06:40:58] [REABASTECE  ] Lote #2 (+50 CPUs) entregado por proveedor. Stock actualizado: 56 unidades.
+[06:41:41] [FINALIZADO  ] Orden #69 completada. Espera: 90.45 min, Total: 94.06 min.
+[06:41:41] [SERVICIO    ] Orden #70 inicia ensamble. Procesador asignado. Stock restante: 55
+[06:45:11] [LLEGADA     ] Orden #86 recibida. Servicio estimado: 8.02 min. Stock actual: 55
+[06:45:11] [EN_COLA     ] Orden #86 entra a cola de espera. Longitud de cola: 16
+[06:48:14] [FINALIZADO  ] Orden #70 completada. Espera: 89.14 min, Total: 95.69 min.
+[06:48:14] [SERVICIO    ] Orden #71 inicia ensamble. Procesador asignado. Stock restante: 54
+[06:48:35] [FINALIZADO  ] Orden #71 completada. Espera: 90.62 min, Total: 90.97 min.
+[06:48:35] [SERVICIO    ] Orden #72 inicia ensamble. Procesador asignado. Stock restante: 53
+[06:49:03] [LLEGADA     ] Orden #87 recibida. Servicio estimado: 7.03 min. Stock actual: 53
+[06:49:03] [EN_COLA     ] Orden #87 entra a cola de espera. Longitud de cola: 15
+[06:49:36] [FINALIZADO  ] Orden #72 completada. Espera: 89.70 min, Total: 90.72 min.
+[06:49:36] [SERVICIO    ] Orden #73 inicia ensamble. Procesador asignado. Stock restante: 52
+[06:52:37] [LLEGADA     ] Orden #88 recibida. Servicio estimado: 6.98 min. Stock actual: 52
+[06:52:37] [EN_COLA     ] Orden #88 entra a cola de espera. Longitud de cola: 15
+[06:54:44] [FINALIZADO  ] Orden #73 completada. Espera: 77.78 min, Total: 82.92 min.
+[06:54:44] [SERVICIO    ] Orden #74 inicia ensamble. Procesador asignado. Stock restante: 51
+[06:55:01] [FINALIZADO  ] Orden #74 completada. Espera: 76.87 min, Total: 77.15 min.
+[06:55:01] [SERVICIO    ] Orden #75 inicia ensamble. Procesador asignado. Stock restante: 50
+[06:55:55] [FINALIZADO  ] Orden #75 completada. Espera: 61.69 min, Total: 62.58 min.
+[06:55:55] [SERVICIO    ] Orden #76 inicia ensamble. Procesador asignado. Stock restante: 49
+[06:58:00] [LLEGADA     ] Orden #89 recibida. Servicio estimado: 1.42 min. Stock actual: 49
+[06:58:00] [EN_COLA     ] Orden #89 entra a cola de espera. Longitud de cola: 13
+[07:01:48] [FINALIZADO  ] Orden #76 completada. Espera: 62.28 min, Total: 68.17 min.
+[07:01:48] [SERVICIO    ] Orden #77 inicia ensamble. Procesador asignado. Stock restante: 48
+[07:03:33] [FINALIZADO  ] Orden #77 completada. Espera: 60.23 min, Total: 61.98 min.
+[07:03:33] [SERVICIO    ] Orden #78 inicia ensamble. Procesador asignado. Stock restante: 47
+[07:04:07] [LLEGADA     ] Orden #90 recibida. Servicio estimado: 0.99 min. Stock actual: 47
+[07:04:07] [EN_COLA     ] Orden #90 entra a cola de espera. Longitud de cola: 12
+[07:10:37] [LLEGADA     ] Orden #91 recibida. Servicio estimado: 8.93 min. Stock actual: 47
+[07:10:37] [EN_COLA     ] Orden #91 entra a cola de espera. Longitud de cola: 13
+[07:12:47] [FINALIZADO  ] Orden #78 completada. Espera: 57.45 min, Total: 66.68 min.
+[07:12:47] [SERVICIO    ] Orden #79 inicia ensamble. Procesador asignado. Stock restante: 46
+[07:17:02] [LLEGADA     ] Orden #92 recibida. Servicio estimado: 26.32 min. Stock actual: 46
+[07:17:02] [EN_COLA     ] Orden #92 entra a cola de espera. Longitud de cola: 13
+[07:18:15] [LLEGADA     ] Orden #93 recibida. Servicio estimado: 4.26 min. Stock actual: 46
+[07:18:15] [EN_COLA     ] Orden #93 entra a cola de espera. Longitud de cola: 14
+[07:18:27] [LLEGADA     ] Orden #94 recibida. Servicio estimado: 0.05 min. Stock actual: 46
+[07:18:27] [EN_COLA     ] Orden #94 entra a cola de espera. Longitud de cola: 15
+[07:19:51] [FINALIZADO  ] Orden #79 completada. Espera: 60.89 min, Total: 67.96 min.
+[07:19:51] [SERVICIO    ] Orden #80 inicia ensamble. Procesador asignado. Stock restante: 45
+[07:23:26] [LLEGADA     ] Orden #95 recibida. Servicio estimado: 1.26 min. Stock actual: 45
+[07:23:26] [EN_COLA     ] Orden #95 entra a cola de espera. Longitud de cola: 15
+[07:24:49] [FINALIZADO  ] Orden #80 completada. Espera: 67.76 min, Total: 72.72 min.
+[07:24:49] [SERVICIO    ] Orden #81 inicia ensamble. Procesador asignado. Stock restante: 44
+[07:27:30] [LLEGADA     ] Orden #96 recibida. Servicio estimado: 5.60 min. Stock actual: 44
+[07:27:30] [EN_COLA     ] Orden #96 entra a cola de espera. Longitud de cola: 15
+[07:28:50] [FINALIZADO  ] Orden #81 completada. Espera: 65.33 min, Total: 69.34 min.
+[07:28:50] [SERVICIO    ] Orden #82 inicia ensamble. Procesador asignado. Stock restante: 43
+[07:34:36] [LLEGADA     ] Orden #97 recibida. Servicio estimado: 6.08 min. Stock actual: 43
+[07:34:36] [EN_COLA     ] Orden #97 entra a cola de espera. Longitud de cola: 15
+[07:35:27] [FINALIZADO  ] Orden #82 completada. Espera: 60.03 min, Total: 66.64 min.
+[07:35:27] [SERVICIO    ] Orden #83 inicia ensamble. Procesador asignado. Stock restante: 42
+[07:36:17] [LLEGADA     ] Orden #98 recibida. Servicio estimado: 3.90 min. Stock actual: 42
+[07:36:17] [EN_COLA     ] Orden #98 entra a cola de espera. Longitud de cola: 15
+[07:36:30] [FINALIZADO  ] Orden #83 completada. Espera: 66.31 min, Total: 67.36 min.
+[07:36:30] [SERVICIO    ] Orden #84 inicia ensamble. Procesador asignado. Stock restante: 41
+[07:36:57] [FINALIZADO  ] Orden #84 completada. Espera: 66.33 min, Total: 66.79 min.
+[07:36:57] [SERVICIO    ] Orden #85 inicia ensamble. Procesador asignado. Stock restante: 40
+[07:40:35] [LLEGADA     ] Orden #99 recibida. Servicio estimado: 3.16 min. Stock actual: 40
+[07:40:35] [EN_COLA     ] Orden #99 entra a cola de espera. Longitud de cola: 14
+[07:45:50] [LLEGADA     ] Orden #100 recibida. Servicio estimado: 2.13 min. Stock actual: 40
+[07:45:50] [EN_COLA     ] Orden #100 entra a cola de espera. Longitud de cola: 15
+[07:46:05] [FINALIZADO  ] Orden #85 completada. Espera: 64.68 min, Total: 73.80 min.
+[07:46:05] [SERVICIO    ] Orden #86 inicia ensamble. Procesador asignado. Stock restante: 39
+[07:49:33] [LLEGADA     ] Orden #101 recibida. Servicio estimado: 4.47 min. Stock actual: 39
+[07:49:33] [EN_COLA     ] Orden #101 entra a cola de espera. Longitud de cola: 15
+[07:51:14] [LLEGADA     ] Orden #102 recibida. Servicio estimado: 5.17 min. Stock actual: 39
+[07:51:14] [EN_COLA     ] Orden #102 entra a cola de espera. Longitud de cola: 16
+[07:54:06] [FINALIZADO  ] Orden #86 completada. Espera: 60.89 min, Total: 68.91 min.
+[07:54:06] [SERVICIO    ] Orden #87 inicia ensamble. Procesador asignado. Stock restante: 38
+[08:00:00] [FIN_SIM     ] Simulación finalizada a las 8.00 horas. Generando métricas finales.

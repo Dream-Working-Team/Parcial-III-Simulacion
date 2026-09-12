@@ -1,0 +1,39 @@
+================================================================================
+REPORTE OFICIAL DE SIMULACIÓN - CASO POR DEFECTO
+PROBLEMA 2: SIMULACIÓN CONTINUA (CLÚSTER TÉRMICO DE SERVIDORES)
+================================================================================
+
+1. PARÁMETROS DEL MODELO (POR DEFECTO):
+  - Duración: 24.0 horas
+  - Tráfico medio: 3.0 Gbps (std=1.0, acotado [1, 5] Gbps)
+  - Temperatura nominal de diseño: 70.0 °C
+  - Paso de integración RK4: 2.0 segundos
+
+2. MÉTRICAS CUANTITATIVAS OBTENIDAS:
+  - duracion_simulacion_horas: 24.0
+  - total_trafico_entrante_tb: 32.5
+  - total_datos_procesados_tb: 29.157
+  - perdida_o_rechazo_tb: 3.343
+  - eficiencia_global_red_pct: 89.71
+  - temperatura_promedio_c: 65.59
+  - temperatura_desviacion_estandar_c: 2.96
+  - temperatura_minima_c: 57.68
+  - temperatura_maxima_c: 72.35
+  - eventos_estrangulamiento_termico: 26
+  - tiempo_en_estrangulamiento_min: 78.67
+  - porcentaje_tiempo_estrangulado: 5.46
+  - diagnostico_viabilidad_operativa: ESTABLE Y VIABLE
+
+3. ANÁLISIS, CONCLUSIÓN Y RECOMENDACIONES DE LA IA (GEMINI):
+--------------------------------------------------------------------------------
+1. **EVALUACIÓN DE ESTABILIDAD TÉRMICA**: El sistema muestra buena estabilidad global con una temperatura promedio de 65.59°C y una desviación estándar de 2.96°C. Sin embargo, el pico máximo alcanzó los 72.35°C, superando el umbral crítico de 70°C. Esto provocó 26 eventos de *thermal throttling*, acumulando 78.67 minutos (5.46% del tiempo total) en estado de estrangulamiento, lo que evidencia que la constante de enfriamiento actual ($k_{cool}$) es insuficiente para picos de tráfico hacia el límite superior de la distribución (5 Gbps).
+
+2. **IMPACTO EN THROUGHPUT (TB PROCESADOS):** De un total de 32.5 TB ingresados, se procesaron 29.157 TB, resultando en una pérdida de 3.343 TB (10.29% del volumen). La eficiencia global de la red se mantuvo en un aceptable 89.71%, muy cerca del 90% nominal. No obstante, las caídas de eficiencia durante el *throttling* (hasta 85.1%) degradan el rendimiento efectivo del clúster.
+
+3. **CONCLUSIÓN:** El clúster es **ESTABLE Y VIABLE** para operación continua a 24 horas, pero opera cerca de sus límites térmicos bajo la carga actual. Se requiere intervención para evitar degradación a largo plazo.
+
+4. **RECOMENDACIONES DE INGENIERÍA:**
+   * **Optimización de Refrigeración:** Incrementar el caudal o reducir la temperatura del fluido en el sistema de enfriamiento líquido para elevar $k_{cool}$ y acelerar la disipación.
+   * **Control Predictivo (MPC):** Implementar un algoritmo de control proactivo que reduzca la frecuencia del servidor *antes* de llegar a los 70°C, minimizando transitorios severos.
+   * **Ajuste de Carga:** Configurar un balanceador de carga con umbrales de tráfico dinámicos para derivar peticiones cuando el tráfico supere los 4.2 Gbps.
+--------------------------------------------------------------------------------
